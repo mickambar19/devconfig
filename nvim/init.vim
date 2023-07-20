@@ -7,6 +7,7 @@ Plug 'sainnhe/sonokai'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 "
