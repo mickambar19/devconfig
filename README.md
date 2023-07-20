@@ -40,8 +40,11 @@ Enter vim and write the colon mark **:**. Now execute **:PlugInstall** within vi
 You have just installed a few useful things along with a better theme. Try opening a Javascript file.
 
 - Install the plugins in Tmux
+
 You can execute the following keys and it will install all the plugins for tmux.
 
-<C-Space> I
+```
+    <C-Space> I
+```
 
 
