@@ -1,6 +1,0 @@
-{
-  "[javascript][javascriptreact][typescript][typescriptreact][json]": {
-    "coc.preferences.formatOnSave": true
-  },
-  "prettier.requireConfig": true
-}
