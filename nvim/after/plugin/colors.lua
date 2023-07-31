@@ -1,6 +1,6 @@
 function SetupTheme(color)
 	color = color or "tokyonight"
-	if color == tokyonight then
+	if color == "tokyonight" then
         require("tokyonight").setup({
 			-- your configuration comes here
 			-- or leave it empty to use the default settings
