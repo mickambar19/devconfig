@@ -19,13 +19,17 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
+  -- Themes
   use 'folke/tokyonight.nvim'
+  -- use 'morhetz/gruvbox'
+
   use 'mbbill/undotree'
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.2',
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
+  use 'tpope/vim-fugitive'
   use {
 	  'nvim-treesitter/nvim-treesitter',
 	  run = ':TSUpdate'
@@ -34,6 +38,7 @@ return require('packer').startup(function(use)
 	  'nvim-lualine/lualine.nvim',
 	  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
+  
   -- Automatically set up your configuration after cloning packer.nvim
   if packer_bootstrap then
     require('packer').sync()
