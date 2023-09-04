@@ -63,4 +63,5 @@ return require('packer').startup(function(use)
     use {
         'prettier/vim-prettier', run = 'yarn install --frozen-lockfile --production'
     }
+    use 'tpope/vim-commentary'
 end)
