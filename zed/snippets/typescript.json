@@ -1,0 +1,2975 @@
+{
+  "Import default module (JS)": {
+    "prefix": "imp",
+    "body": ["import ${2:second} from '${1:first}'"],
+    "description": "Import default module"
+  },
+  "Import default module (TS)": {
+    "prefix": "imp",
+    "body": ["import ${1:module} from '${2:path}';"],
+    "description": "Import default module"
+  },
+  "Import destructing": {
+    "prefix": "imd",
+    "body": ["import { ${2:second} } from '${1:first}'"],
+    "description": "Import destructing"
+  },
+  "Import named": {
+    "prefix": "impn",
+    "body": ["import { ${1:name} } from '${2:path}';"],
+    "description": "Import named"
+  },
+  "Import type": {
+    "prefix": "impt",
+    "body": ["import type { ${1:Type} } from '${2:path}';"],
+    "description": "Import type"
+  },
+  "Import As": {
+    "prefix": "ima",
+    "body": ["import { ${2:second} as ${3:third} } from '${1:first}'"],
+    "description": "Import As"
+  },
+  "Import all as alias": {
+    "prefix": "impa",
+    "body": ["import * as ${1:alias} from '${2:path}';"],
+    "description": "Import all as alias"
+  },
+  "Import dynamic": {
+    "prefix": "impd",
+    "body": ["const ${1:module} = await import('${2:path}');"],
+    "description": "Import dynamic"
+  },
+  "Import Everything": {
+    "prefix": "ime",
+    "body": ["import * as ${2:second} from '${1:first}'"],
+    "description": "Import Everything"
+  },
+  "Import No Module Name": {
+    "prefix": "imn",
+    "body": ["import '${1:first}'"],
+    "description": "Import No Module Name"
+  },
+  "Import PropTypes": {
+    "prefix": "impt",
+    "body": ["import PropTypes from 'prop-types'"],
+    "description": "Import PropTypes"
+  },
+  "Import React": {
+    "prefix": "imr",
+    "body": ["import React from 'react'"],
+    "description": "Import React"
+  },
+  "Import React DOM": {
+    "prefix": "imrd",
+    "body": ["import ReactDOM from 'react-dom'"],
+    "description": "Import React DOM"
+  },
+  "Import React with Component": {
+    "prefix": "imrc",
+    "body": ["import React, { Component } from 'react'"],
+    "description": "Import React with Component"
+  },
+  "Import React with Component and PropTypes": {
+    "prefix": "imrcp",
+    "body": [
+      "import React, { Component } from 'react'",
+      "import PropTypes from 'prop-types'",
+      ""
+    ],
+    "description": "Import React with Component and PropTypes"
+  },
+  "Import React with PureComponent": {
+    "prefix": "imrpc",
+    "body": ["import React, { PureComponent } from 'react'"],
+    "description": "Import React with PureComponent"
+  },
+  "Import React with PureComponent and PropTypes": {
+    "prefix": "imrpcp",
+    "body": [
+      "import React, { PureComponent } from 'react'",
+      "import PropTypes from 'prop-types'",
+      ""
+    ],
+    "description": "Import React with PureComponent and PropTypes"
+  },
+  "Import React with useState": {
+    "prefix": "imrs",
+    "body": ["import React, { useState } from 'react'"],
+    "description": "Import React with useState"
+  },
+  "Import React with useState and useEffect": {
+    "prefix": "imrse",
+    "body": ["import React, { useState, useEffect } from 'react'"],
+    "description": "Import React with useState and useEffect"
+  },
+  "Import React with Memo": {
+    "prefix": "imrm",
+    "body": ["import React, { memo } from 'react'"],
+    "description": "Import React with Memo"
+  },
+  "Import React with Memo and PropTypes": {
+    "prefix": "imrmp",
+    "body": [
+      "import React, { memo } from 'react'",
+      "import PropTypes from 'prop-types'",
+      ""
+    ],
+    "description": "Import React with Memo and PropTypes"
+  },
+  "Import Redux Connect": {
+    "prefix": "redux",
+    "body": ["import { connect } from 'react-redux'"],
+    "description": "Import Redux Connect"
+  },
+  "Import Browser Router": {
+    "prefix": "imbr",
+    "body": ["import { BrowserRouter as Router } from 'react-router-dom'"],
+    "description": "Import Browser Router"
+  },
+  "Import Browser Router with Route and NavLink": {
+    "prefix": "imrr",
+    "body": [
+      "import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'",
+      ""
+    ],
+    "description": "Import Browser Router with Route and NavLink"
+  },
+  "Import Router Setup": {
+    "prefix": "imbrc",
+    "body": ["import { Routes, Route, NavLink, Link } from 'react-router-dom'"],
+    "description": "Import Router Setup"
+  },
+  "Import Router Routes": {
+    "prefix": "imrrs",
+    "body": ["import { Routes, Route } from 'react-router-dom'"],
+    "description": "Import Router Routes"
+  },
+  "Import Router Link": {
+    "prefix": "imbrl",
+    "body": ["import { Link } from 'react-router-dom'"],
+    "description": "Import Router Link"
+  },
+  "Import Router NavLink": {
+    "prefix": "imbrnl",
+    "body": ["import { NavLink } from 'react-router-dom'"],
+    "description": "Import Router NavLink"
+  },
+  "Import createBrowserRouter": {
+    "prefix": "imcbr",
+    "body": [
+      "import { createBrowserRouter, RouterProvider } from 'react-router-dom'"
+    ],
+    "description": "Import createBrowserRouter"
+  },
+  "Import useLoaderData": {
+    "prefix": "imld",
+    "body": ["import { useLoaderData } from 'react-router-dom'"],
+    "description": "Import useLoaderData"
+  },
+  "Import useFetcher": {
+    "prefix": "imfet",
+    "body": ["import { useFetcher } from 'react-router-dom'"],
+    "description": "Import useFetcher"
+  },
+  "Import useNavigate": {
+    "prefix": "imnav",
+    "body": ["import { useNavigate } from 'react-router-dom'"],
+    "description": "Import useNavigate"
+  },
+  "Import useParams": {
+    "prefix": "impar",
+    "body": ["import { useParams } from 'react-router-dom'"],
+    "description": "Import useParams"
+  },
+  "Import useSearchParams": {
+    "prefix": "imsp",
+    "body": ["import { useSearchParams } from 'react-router-dom'"],
+    "description": "Import useSearchParams"
+  },
+  "React Native Import": {
+    "prefix": "imrn",
+    "body": ["import { ${1:first} } from 'react-native'"],
+    "description": "React Native Import"
+  },
+  "Export Default (JS)": {
+    "prefix": "exp",
+    "body": ["export default ${1:first}"],
+    "description": "Export Default"
+  },
+  "Export Destructing": {
+    "prefix": "exd",
+    "body": ["export { ${2:second} } from '${1:first}'"],
+    "description": "Export Destructing"
+  },
+  "Export As": {
+    "prefix": "exa",
+    "body": ["export { ${2:second} as ${3:third} } from '${1:first}'"],
+    "description": "Export As"
+  },
+  "Export named function": {
+    "prefix": "enf",
+    "body": ["export const ${1:first} = (${2:second}) => {${3:third}}"],
+    "description": "Export named function"
+  },
+  "Export default function": {
+    "prefix": "edf",
+    "body": ["export default (${1:first}) => {${2:second}}"],
+    "description": "Export default function"
+  },
+  "Export default named function": {
+    "prefix": "ednf",
+    "body": ["export default function ${1:first}(${2:second}) {${3:third}}"],
+    "description": "Export default named function"
+  },
+  "Export Default (TS)": {
+    "prefix": "exp",
+    "body": ["export default ${1:name};"],
+    "description": "Export Default"
+  },
+  "Export Named": {
+    "prefix": "expn",
+    "body": ["export { ${1:name} };"],
+    "description": "Export Named"
+  },
+  "Export Type": {
+    "prefix": "expt",
+    "body": ["export type { ${1:Type} };"],
+    "description": "Export Type"
+  },
+  "Export All": {
+    "prefix": "expa",
+    "body": ["export * from '${1:path}';"],
+    "description": "Export All"
+  },
+  "Export Function": {
+    "prefix": "expf",
+    "body": [
+      "export function ${1:functionName}(${2:params}): ${3:ReturnType} {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Export Function"
+  },
+  "Export Const": {
+    "prefix": "expc",
+    "body": ["export const ${1:name}: ${2:Type} = ${3:value};"],
+    "description": "Export Const"
+  },
+  "Export Interface": {
+    "prefix": "expi",
+    "body": [
+      "export interface ${1:InterfaceName} {",
+      "\t${2:property}: ${3:Type};$0",
+      "}"
+    ],
+    "description": "Export Interface"
+  },
+  "Export Type Alias": {
+    "prefix": "expta",
+    "body": ["export type ${1:TypeName} = ${2:Type};"],
+    "description": "Export Type Alias"
+  },
+  "TypeScript Export Type (React)": {
+    "prefix": "exptp",
+    "body": ["export type ${1:first} = {${2:second}}"],
+    "description": "TypeScript Export Type (React)"
+  },
+  "TypeScript Export Interface (React)": {
+    "prefix": "expint",
+    "body": ["export interface ${1:first} {${2:second}}"],
+    "description": "TypeScript Export Interface (React)"
+  },
+  "Console Log": {
+    "prefix": "clg",
+    "body": ["console.log(${1:first})"],
+    "description": "Console Log"
+  },
+  "Console Log (short)": {
+    "prefix": "log",
+    "body": ["console.log($0)"],
+    "description": "Console Log (short)"
+  },
+  "Console Log Object": {
+    "prefix": "clo",
+    "body": ["console.log('${1:first}', ${1:first})"],
+    "description": "Console Log Object"
+  },
+  "Console Log JSON": {
+    "prefix": "clj",
+    "body": ["console.log('${1:first}', JSON.stringify(${1:first}, null, 2))"],
+    "description": "Console Log JSON"
+  },
+  "Console Error": {
+    "prefix": "cer",
+    "body": ["console.error(${1:first})"],
+    "description": "Console Error"
+  },
+  "Console Error (short)": {
+    "prefix": "error",
+    "body": ["console.error($0)"],
+    "description": "Console Error (short)"
+  },
+  "Console Warn": {
+    "prefix": "cwa",
+    "body": ["console.warn(${1:first})"],
+    "description": "Console Warn"
+  },
+  "Console Warn (short)": {
+    "prefix": "warn",
+    "body": ["console.warn($0)"],
+    "description": "Console Warn (short)"
+  },
+  "Console Info": {
+    "prefix": "cin",
+    "body": ["console.info(${1:first})"],
+    "description": "Console Info"
+  },
+  "Console Trace": {
+    "prefix": "ctr",
+    "body": ["console.trace(${1:first})"],
+    "description": "Console Trace"
+  },
+  "Console Assert": {
+    "prefix": "cas",
+    "body": ["console.assert(${1:first}, ${2:second})"],
+    "description": "Console Assert"
+  },
+  "Console Clear": {
+    "prefix": "ccl",
+    "body": ["console.clear()"],
+    "description": "Console Clear"
+  },
+  "Console Count": {
+    "prefix": "cco",
+    "body": ["console.count(${1:first})"],
+    "description": "Console Count"
+  },
+  "Console Dir": {
+    "prefix": "cdi",
+    "body": ["console.dir(${1:first})"],
+    "description": "Console Dir"
+  },
+  "Console Group": {
+    "prefix": "cgr",
+    "body": ["console.group('${1:first}')"],
+    "description": "Console Group"
+  },
+  "Console Group End": {
+    "prefix": "cge",
+    "body": ["console.groupEnd()"],
+    "description": "Console Group End"
+  },
+  "Console Time": {
+    "prefix": "ctm",
+    "body": ["console.time('${1:first}')"],
+    "description": "Console Time"
+  },
+  "Console Time End": {
+    "prefix": "cte",
+    "body": ["console.timeEnd('${1:first}')"],
+    "description": "Console Time End"
+  },
+  "Console Time block": {
+    "prefix": "time",
+    "body": [
+      "console.time('${1:label}');",
+      "$0",
+      "console.timeEnd('${1:label}');"
+    ],
+    "description": "Console Time block"
+  },
+  "Console Table": {
+    "prefix": "ctl",
+    "body": ["console.table([${1:first}])"],
+    "description": "Console Table"
+  },
+  "Console Table (short)": {
+    "prefix": "table",
+    "body": ["console.table($0)"],
+    "description": "Console Table (short)"
+  },
+  "React Functional Component": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "export default function ${1:ComponentName}() {",
+      "  return (",
+      "    <>${2:first}</>",
+      "  )",
+      "}",
+      ""
+    ],
+    "description": "React Functional Component"
+  },
+  "React Functional Export Component": {
+    "prefix": "rfce",
+    "body": [
+      "import React from 'react'",
+      "",
+      "function ${1:ComponentName}() {",
+      "  return (",
+      "    <>${2:first}</>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:ComponentName}"
+    ],
+    "description": "React Functional Export Component"
+  },
+  "React Arrow Function Component": {
+    "prefix": "rafc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "export const ${1:ComponentName} = () => {",
+      "  return (",
+      "    <>${2:first}</>",
+      "  )",
+      "}",
+      ""
+    ],
+    "description": "React Arrow Function Component"
+  },
+  "React Arrow Function Export Component": {
+    "prefix": "rafce",
+    "body": [
+      "import React from 'react'",
+      "",
+      "const ${1:ComponentName} = () => {",
+      "  return (",
+      "    <>${2:first}</>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:ComponentName}"
+    ],
+    "description": "React Arrow Function Export Component"
+  },
+  "React Functional Component with PropTypes": {
+    "prefix": "rfcp",
+    "body": [
+      "import React from 'react'",
+      "import PropTypes from 'prop-types'",
+      "",
+      "function ${1:ComponentName}(props) {",
+      "  return (",
+      "    <>${2:first}</>",
+      "  )",
+      "}",
+      "",
+      "${1:ComponentName}.propTypes = {}",
+      "",
+      "export default ${1:ComponentName}",
+      ""
+    ],
+    "description": "React Functional Component with PropTypes"
+  },
+  "React Arrow Function Component with PropTypes": {
+    "prefix": "rafcp",
+    "body": [
+      "import React from 'react'",
+      "import PropTypes from 'prop-types'",
+      "",
+      "const ${1:ComponentName} = props => {",
+      "  return (",
+      "    <>${2:first}</>",
+      "  )",
+      "}",
+      "",
+      "${1:ComponentName}.propTypes = {}",
+      "",
+      "export default ${1:ComponentName}"
+    ],
+    "description": "React Arrow Function Component with PropTypes"
+  },
+  "React Class Component": {
+    "prefix": "rcc",
+    "body": [
+      "import React, { Component } from 'react'",
+      "",
+      "export default class ${1:ComponentName} extends Component {",
+      "  render() {",
+      "    return (",
+      "      <>${2:first}</>",
+      "    )",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "React Class Component"
+  },
+  "React Class Export Component": {
+    "prefix": "rce",
+    "body": [
+      "import React, { Component } from 'react'",
+      "",
+      "export class ${1:ComponentName} extends Component {",
+      "  render() {",
+      "    return (",
+      "      <>${2:first}</>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "export default ${1:ComponentName}"
+    ],
+    "description": "React Class Export Component"
+  },
+  "React Class Export Component with PropTypes": {
+    "prefix": "rcep",
+    "body": [
+      "import PropTypes from 'prop-types'",
+      "import React, { Component } from 'react'",
+      "",
+      "export class ${1:ComponentName} extends Component {",
+      "  static propTypes = {}",
+      "",
+      "  render() {",
+      "    return (",
+      "      <>${2:first}</>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "export default ${1:ComponentName}"
+    ],
+    "description": "React Class Export Component with PropTypes"
+  },
+  "React Class Pure Component": {
+    "prefix": "rpc",
+    "body": [
+      "import React, { PureComponent } from 'react'",
+      "",
+      "export default class ${1:ComponentName} extends PureComponent {",
+      "  render() {",
+      "    return (",
+      "      <>${2:first}</>",
+      "    )",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "React Class Pure Component"
+  },
+  "React Class Export Pure Component": {
+    "prefix": "rpce",
+    "body": [
+      "import React, { PureComponent } from 'react'",
+      "",
+      "export class ${1:ComponentName} extends PureComponent {",
+      "  render() {",
+      "    return (",
+      "      <>${2:first}</>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "export default ${1:ComponentName}"
+    ],
+    "description": "React Class Export Pure Component"
+  },
+  "React Class Pure Component with PropTypes": {
+    "prefix": "rpcp",
+    "body": [
+      "import PropTypes from 'prop-types'",
+      "import React, { PureComponent } from 'react'",
+      "",
+      "export default class ${1:ComponentName} extends PureComponent {",
+      "  static propTypes = {}",
+      "",
+      "  render() {",
+      "    return (",
+      "      <>${2:first}</>",
+      "    )",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "React Class Pure Component with PropTypes"
+  },
+  "React Function Memo Component": {
+    "prefix": "rmc",
+    "body": [
+      "import React, { memo } from 'react'",
+      "",
+      "const ${1:ComponentName} = memo(() => {",
+      "  return (",
+      "    <>${2:first}</>",
+      "  )",
+      "})",
+      "",
+      "export default ${1:ComponentName}"
+    ],
+    "description": "React Function Memo Component"
+  },
+  "React Function Memo Component with PropTypes": {
+    "prefix": "rmcp",
+    "body": [
+      "import PropTypes from 'prop-types'",
+      "import React, { memo } from 'react'",
+      "",
+      "const ${1:ComponentName} = memo((props) => {",
+      "  return (",
+      "    <>${2:first}</>",
+      "  )",
+      "})",
+      "",
+      "${1:ComponentName}.propTypes = {}",
+      "",
+      "export default ${1:ComponentName}"
+    ],
+    "description": "React Function Memo Component with PropTypes"
+  },
+  "React Class Component PropTypes": {
+    "prefix": "rccp",
+    "body": [
+      "import PropTypes from 'prop-types'",
+      "import React, { Component } from 'react'",
+      "",
+      "export default class ${1:ComponentName} extends Component {",
+      "  static propTypes = {${2:second}: ${3:third}}",
+      "",
+      "  render() {",
+      "    return (",
+      "      <>${4:first}</>",
+      "    )",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "React Class Component PropTypes"
+  },
+  "React Class Component Redux": {
+    "prefix": "rcredux",
+    "body": [
+      "import React, { Component } from 'react'",
+      "import { connect } from 'react-redux'",
+      "",
+      "export class ${1:ComponentName} extends Component {",
+      "  render() {",
+      "    return (",
+      "      <>${2:first}</>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "const mapStateToProps = (state) => ({})",
+      "",
+      "const mapDispatchToProps = {}",
+      "",
+      "export default connect(mapStateToProps, mapDispatchToProps)(${1:ComponentName})"
+    ],
+    "description": "React Class Component Redux"
+  },
+  "React Class Component Redux PropTypes": {
+    "prefix": "rcreduxp",
+    "body": [
+      "import PropTypes from 'prop-types'",
+      "import React, { Component } from 'react'",
+      "import { connect } from 'react-redux'",
+      "",
+      "export class ${1:ComponentName} extends Component {",
+      "  static propTypes = {",
+      "    ${2:second}: ${3:third}",
+      "  }",
+      "",
+      "  render() {",
+      "    return (",
+      "      <>${4:first}</>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "const mapStateToProps = (state) => ({})",
+      "",
+      "const mapDispatchToProps = {}",
+      "",
+      "export default connect(mapStateToProps, mapDispatchToProps)(${1:ComponentName})"
+    ],
+    "description": "React Class Component Redux PropTypes"
+  },
+  "React Functional Component Redux": {
+    "prefix": "rfcredux",
+    "body": [
+      "import React from 'react'",
+      "import { connect } from 'react-redux'",
+      "",
+      "export const ${1:ComponentName} = (props) => {",
+      "  return (",
+      "    <>${2:first}</>",
+      "  )",
+      "}",
+      "",
+      "const mapStateToProps = (state) => ({})",
+      "",
+      "const mapDispatchToProps = {}",
+      "",
+      "export default connect(mapStateToProps, mapDispatchToProps)(${1:ComponentName})"
+    ],
+    "description": "React Functional Component Redux"
+  },
+  "TypeScript React Functional Component": {
+    "prefix": "tsrfc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "export default function ${1:ComponentName}({}: Props) {",
+      "  return (",
+      "    <>${2:first}</>",
+      "  )",
+      "}"
+    ],
+    "description": "TypeScript React Functional Component"
+  },
+  "TypeScript React Functional Export Component": {
+    "prefix": "tsrfce",
+    "body": [
+      "import React from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "function ${1:ComponentName}({}: Props) {",
+      "  return (",
+      "    <>${2:first}</>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:ComponentName}"
+    ],
+    "description": "TypeScript React Functional Export Component"
+  },
+  "TypeScript React Arrow Function Export Component": {
+    "prefix": "tsrafce",
+    "body": [
+      "import React from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "const ${1:ComponentName} = (props: Props) => {",
+      "  return (",
+      "    <>${2:first}</>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:ComponentName}"
+    ],
+    "description": "TypeScript React Arrow Function Export Component"
+  },
+  "TypeScript React Arrow Function Component": {
+    "prefix": "tsrafc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "export const ${1:ComponentName} = (props: Props) => {",
+      "  return (",
+      "    <>${2:first}</>",
+      "  )",
+      "}"
+    ],
+    "description": "TypeScript React Arrow Function Component"
+  },
+  "TypeScript React Class Component": {
+    "prefix": "tsrcc",
+    "body": [
+      "import React, { Component } from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "type State = {}",
+      "",
+      "export default class ${1:ComponentName} extends Component<Props, State> {",
+      "  state = {}",
+      "",
+      "  render() {",
+      "    return (",
+      "      <>${2:first}</>",
+      "    )",
+      "  }",
+      "}"
+    ],
+    "description": "TypeScript React Class Component"
+  },
+  "TypeScript React Class Export Component": {
+    "prefix": "tsrce",
+    "body": [
+      "import React, { Component } from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "type State = {}",
+      "",
+      "class ${1:ComponentName} extends Component<Props, State> {",
+      "  state = {}",
+      "",
+      "  render() {",
+      "    return (",
+      "      <>${2:first}</>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "export default ${1:ComponentName}"
+    ],
+    "description": "TypeScript React Class Export Component"
+  },
+  "TypeScript React Class Pure Component": {
+    "prefix": "tsrpc",
+    "body": [
+      "import React, { PureComponent } from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "export default class ${1:ComponentName} extends PureComponent<Props> {",
+      "  render() {",
+      "    return (",
+      "      <>${2:first}</>",
+      "    )",
+      "  }",
+      "}"
+    ],
+    "description": "TypeScript React Class Pure Component"
+  },
+  "TypeScript React Class Export Pure Component": {
+    "prefix": "tsrpce",
+    "body": [
+      "import React, { PureComponent } from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "class ${1:ComponentName} extends PureComponent<Props> {",
+      "  render() {",
+      "    return (",
+      "      <>${2:first}</>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "export default ${1:ComponentName}"
+    ],
+    "description": "TypeScript React Class Export Pure Component"
+  },
+  "TypeScript React Class Component Redux": {
+    "prefix": "tsrcredux",
+    "body": [
+      "import { connect } from 'react-redux'",
+      "import React, { Component } from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "type State = {}",
+      "",
+      "export class ${1:ComponentName} extends Component<Props, State> {",
+      "  state = {}",
+      "",
+      "  render() {",
+      "    return (",
+      "      <>${2:first}</>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "const mapStateToProps = (state) => ({})",
+      "",
+      "const mapDispatchToProps = {}",
+      "",
+      "export default connect(mapStateToProps, mapDispatchToProps)(${1:ComponentName})"
+    ],
+    "description": "TypeScript React Class Component Redux"
+  },
+  "TypeScript React Native Arrow Function Component": {
+    "prefix": "tsrnf",
+    "body": [
+      "import { View, Text } from 'react-native'",
+      "import React from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "const ${1:ComponentName} = (props: Props) => {",
+      "  return (",
+      "    <View>",
+      "      <Text>${2:first}</Text>",
+      "    </View>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:ComponentName}"
+    ],
+    "description": "TypeScript React Native Arrow Function Component"
+  },
+  "TypeScript React Native Arrow Function Component with Styles": {
+    "prefix": "tsrnfs",
+    "body": [
+      "import { StyleSheet, Text, View } from 'react-native'",
+      "import React from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "const ${1:ComponentName} = (props: Props) => {",
+      "  return (",
+      "    <View>",
+      "      <Text>${2:first}</Text>",
+      "    </View>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:ComponentName}",
+      "",
+      "const styles = StyleSheet.create({})"
+    ],
+    "description": "TypeScript React Native Arrow Function Component with Styles"
+  },
+  "useEffect hook": {
+    "prefix": "useEffectSnippet",
+    "body": [
+      "useEffect(() => {",
+      "  ${1:first}",
+      "",
+      "  return () => {",
+      "    ${2:second}",
+      "  }",
+      "}, [${3:third}])",
+      ""
+    ],
+    "description": "useEffect hook"
+  },
+  "useState hook": {
+    "prefix": "useStateSnippet",
+    "body": [
+      "const [${1:state}, set${2:setState}] = useState(${3:initialValue})"
+    ],
+    "description": "useState hook"
+  },
+  "useContext hook": {
+    "prefix": "useContextSnippet",
+    "body": ["const ${1:first} = useContext(${2:second})"],
+    "description": "useContext hook"
+  },
+  "useReducer hook": {
+    "prefix": "useReducerSnippet",
+    "body": [
+      "const [state, dispatch] = useReducer(${1:first}, ${2:second}, ${3:third})"
+    ],
+    "description": "useReducer hook"
+  },
+  "useCallback hook": {
+    "prefix": "useCallbackSnippet",
+    "body": [
+      "useCallback(",
+      "  () => {",
+      "    ${1:first}",
+      "  },",
+      "  [${2:second}],",
+      ")",
+      ""
+    ],
+    "description": "useCallback hook"
+  },
+  "useMemo hook": {
+    "prefix": "useMemoSnippet",
+    "body": ["useMemo(() => ${1:first}, [${2:second}])"],
+    "description": "useMemo hook"
+  },
+  "useRef hook": {
+    "prefix": "useRefSnippet",
+    "body": ["const ${1:first} = useRef(${2:second})"],
+    "description": "useRef hook"
+  },
+  "useImperativeHandle hook": {
+    "prefix": "useImperativeHandleSnippet",
+    "body": [
+      "useImperativeHandle(",
+      "  ${1:first},",
+      "  () => {",
+      "    ${2:second}",
+      "  },",
+      "  [${3:third}],",
+      ")"
+    ],
+    "description": "useImperativeHandle hook"
+  },
+  "useLayoutEffect hook": {
+    "prefix": "useLayoutEffectSnippet",
+    "body": [
+      "useLayoutEffect(() => {",
+      "  ${1:first}",
+      "",
+      "  return () => {",
+      "    ${2:second}",
+      "  };",
+      "}, [${3:third}])"
+    ],
+    "description": "useLayoutEffect hook"
+  },
+  "useId hook": {
+    "prefix": "useIdSnippet",
+    "body": ["const ${1:first} = useId()"],
+    "description": "useId hook"
+  },
+  "useTransition hook": {
+    "prefix": "useTransitionSnippet",
+    "body": ["const [isPending, startTransition] = useTransition()"],
+    "description": "useTransition hook"
+  },
+  "useDeferredValue hook": {
+    "prefix": "useDeferredValueSnippet",
+    "body": ["const ${1:first} = useDeferredValue(${2:second})"],
+    "description": "useDeferredValue hook"
+  },
+  "useActionState hook": {
+    "prefix": "useActionStateSnippet",
+    "body": [
+      "const [state, submitAction, isPending] = useActionState(",
+      "  async (previousState, formData) => {",
+      "    ${1:first}",
+      "  },",
+      "  ${2:second},",
+      ")"
+    ],
+    "description": "useActionState hook"
+  },
+  "useFormStatus (import from react-dom)": {
+    "prefix": "useFormStatusSnippet",
+    "body": ["const { pending, data, method, action } = useFormStatus()"],
+    "description": "useFormStatus (import from react-dom)"
+  },
+  "useOptimistic hook": {
+    "prefix": "useOptimisticSnippet",
+    "body": [
+      "const [optimistic${1:Value}, addOptimistic] = useOptimistic(",
+      "  ${2:state},",
+      "  (state, newValue) => [...state, newValue],",
+      ")"
+    ],
+    "description": "useOptimistic hook"
+  },
+  "Read a Promise or Context in render (React 19)": {
+    "prefix": "useSnippet",
+    "body": ["const ${1:first} = use(${2:second})"],
+    "description": "Read a Promise or Context in render (React 19)"
+  },
+  "React Client Component directive": {
+    "prefix": "usc",
+    "body": ["'use client'", ""],
+    "description": "React Client Component directive"
+  },
+  "React Server Action directive": {
+    "prefix": "uss",
+    "body": ["'use server'", ""],
+    "description": "React Server Action directive"
+  },
+  "HOC Component": {
+    "prefix": "hoc",
+    "body": [
+      "import React from 'react'",
+      "import PropTypes from 'prop-types'",
+      "",
+      "export default (WrappedComponent) => {",
+      "  const hocComponent = ({ ...props }) => <WrappedComponent {...props} />",
+      "",
+      "  hocComponent.propTypes = {}",
+      "",
+      "  return hocComponent",
+      "}",
+      ""
+    ],
+    "description": "HOC Component"
+  },
+  "HOC Component with Redux": {
+    "prefix": "hocredux",
+    "body": [
+      "import React from 'react'",
+      "import { connect } from 'react-redux'",
+      "import PropTypes from 'prop-types'",
+      "",
+      "export const mapStateToProps = state => ({})",
+      "",
+      "export const mapDispatchToProps = {}",
+      "",
+      "export const ${1:first} = (WrappedComponent) => {",
+      "  const hocComponent = ({ ...props }) => <WrappedComponent {...props} />",
+      "",
+      "  hocComponent.propTypes = {}",
+      "",
+      "  return hocComponent",
+      "}",
+      "",
+      "export default WrapperComponent => connect(mapStateToProps, mapDispatchToProps)(${1:first}(WrapperComponent))",
+      ""
+    ],
+    "description": "HOC Component with Redux"
+  },
+  "React Router v6 createBrowserRouter setup": {
+    "prefix": "rtrsetup",
+    "body": [
+      "import { createBrowserRouter, RouterProvider } from 'react-router-dom'",
+      "",
+      "const router = createBrowserRouter([",
+      "  {",
+      "    path: '/',",
+      "    element: <${1:first} />,",
+      "    children: [",
+      "      {",
+      "        path: '${2:second}',",
+      "        element: <${3:third} />,",
+      "      },",
+      "    ],",
+      "  },",
+      "])",
+      "",
+      "function App() {",
+      "  return <RouterProvider router={router} />",
+      "}",
+      "",
+      "export default App"
+    ],
+    "description": "React Router v6 createBrowserRouter setup"
+  },
+  "React Router v6 route with loader and action": {
+    "prefix": "rtrla",
+    "body": [
+      "import { useLoaderData } from 'react-router-dom'",
+      "",
+      "async function loader({ request, params }) {",
+      "  ${1:first}",
+      "}",
+      "",
+      "async function action({ request, params }) {",
+      "  const formData = await request.formData()",
+      "  ${2:second}",
+      "}",
+      "",
+      "function ${3:ComponentName}() {",
+      "  const data = useLoaderData()",
+      "",
+      "  return (",
+      "    <>${4:third}</>",
+      "  )",
+      "}",
+      "",
+      "export { loader, action }",
+      "export default ${3:ComponentName}"
+    ],
+    "description": "React Router v6 route with loader and action"
+  },
+  "Redux Action": {
+    "prefix": "rxaction",
+    "body": [
+      "export const ${1:first} = (payload) => ({",
+      "  type: ${2:second},",
+      "  payload",
+      "})",
+      ""
+    ],
+    "description": "Redux Action"
+  },
+  "Redux Const": {
+    "prefix": "rxconst",
+    "body": ["export const ${1:first} = '${1:first}'"],
+    "description": "Redux Const"
+  },
+  "Redux Reducer": {
+    "prefix": "rxreducer",
+    "body": [
+      "const initialState = {}",
+      "",
+      "export default (state = initialState, { type, payload }) => {",
+      "  switch (type) {",
+      "",
+      "  case ${1:first}:",
+      "    return { ...state, ...payload }",
+      "",
+      "  default:",
+      "    return state",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "Redux Reducer"
+  },
+  "Redux Selector": {
+    "prefix": "rxselect",
+    "body": [
+      "import { createSelector } from 'reselect'",
+      "",
+      "export const ${1:first} = state => state.${2:second}"
+    ],
+    "description": "Redux Selector"
+  },
+  "Redux Slice": {
+    "prefix": "rxslice",
+    "body": [
+      "import { createSlice } from '@reduxjs/toolkit'",
+      "",
+      "const initialState = {",
+      "",
+      "}",
+      "",
+      "const ${1:ComponentName} = createSlice({",
+      "  name: ${2:second},",
+      "  initialState,",
+      "  reducers: {}",
+      "});",
+      "",
+      "export const {} = ${1:ComponentName}.actions",
+      "",
+      "export default ${1:ComponentName}.reducer"
+    ],
+    "description": "Redux Slice"
+  },
+  "Redux Slice with Extra Reducers": {
+    "prefix": "rxslicex",
+    "body": [
+      "import { createSlice } from '@reduxjs/toolkit'",
+      "",
+      "const initialState = {",
+      "  ${1:first}",
+      "  status: 'idle',",
+      "}",
+      "",
+      "const ${2:ComponentName} = createSlice({",
+      "  name: '${3:second}',",
+      "  initialState,",
+      "  reducers: {},",
+      "  extraReducers: (builder) => {",
+      "    builder",
+      "      .addCase(${4:third}.pending, (state) => {",
+      "        state.status = 'loading'",
+      "      })",
+      "      .addCase(${4:third}.fulfilled, (state, action) => {",
+      "        state.status = 'succeeded'",
+      "      })",
+      "      .addCase(${4:third}.rejected, (state) => {",
+      "        state.status = 'failed'",
+      "      })",
+      "  },",
+      "})",
+      "",
+      "export const {} = ${2:ComponentName}.actions",
+      "",
+      "export default ${2:ComponentName}.reducer"
+    ],
+    "description": "Redux Slice with Extra Reducers"
+  },
+  "Redux Async Thunk": {
+    "prefix": "rxthunk",
+    "body": [
+      "import { createAsyncThunk } from '@reduxjs/toolkit'",
+      "",
+      "export const ${1:first} = createAsyncThunk('${2:second}', async () => {",
+      "  ${3:third}",
+      "})"
+    ],
+    "description": "Redux Async Thunk"
+  },
+  "Redux API": {
+    "prefix": "rxapi",
+    "body": [
+      "import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'",
+      "",
+      "export const ${1:first}Api = createApi({",
+      "  reducerPath: '${1:first}Api',",
+      "  baseQuery: fetchBaseQuery({ baseUrl: '${2:second}' }),",
+      "  endpoints: (builder) => ({",
+      "    ${3:third}: builder.query({",
+      "      query: () => '/',",
+      "    }),",
+      "  }),",
+      "})",
+      "",
+      "export const { } = ${1:first}Api"
+    ],
+    "description": "Redux API"
+  },
+  "Redux Mapping to Props": {
+    "prefix": "reduxmap",
+    "body": [
+      "const mapStateToProps = (state) => ({})",
+      "",
+      "const mapDispatchToProps = {}"
+    ],
+    "description": "Redux Mapping to Props"
+  },
+  "React Native Styles": {
+    "prefix": "rnstyle",
+    "body": ["const styles = StyleSheet.create({${1:first}})"],
+    "description": "React Native Styles"
+  },
+  "React Native Component": {
+    "prefix": "rnc",
+    "body": [
+      "import { Text, View } from 'react-native'",
+      "import React, { Component } from 'react'",
+      "",
+      "export default class ${1:ComponentName} extends Component {",
+      "  render() {",
+      "    return (",
+      "      <View>",
+      "        <Text>${2:first}</Text>",
+      "      </View>",
+      "    )",
+      "  }",
+      "}"
+    ],
+    "description": "React Native Component"
+  },
+  "React Native Component with Styles": {
+    "prefix": "rncs",
+    "body": [
+      "import { Text, StyleSheet, View } from 'react-native'",
+      "import React, { Component } from 'react'",
+      "",
+      "export default class ${1:ComponentName} extends Component {",
+      "  render() {",
+      "    return (",
+      "      <View>",
+      "        <Text>${2:first}</Text>",
+      "      </View>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "const styles = StyleSheet.create({})"
+    ],
+    "description": "React Native Component with Styles"
+  },
+  "React Native Component Export": {
+    "prefix": "rnce",
+    "body": [
+      "import { Text, View } from 'react-native'",
+      "import React, { Component } from 'react'",
+      "",
+      "export class ${1:ComponentName} extends Component {",
+      "  render() {",
+      "    return (",
+      "      <View>",
+      "        <Text>${2:first}</Text>",
+      "      </View>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "export default ${1:ComponentName}"
+    ],
+    "description": "React Native Component Export"
+  },
+  "React Native Functional Export Component": {
+    "prefix": "rnfe",
+    "body": [
+      "import { View, Text } from 'react-native'",
+      "import React from 'react'",
+      "",
+      "const ${1:ComponentName} = () => {",
+      "  return (",
+      "    <View>",
+      "      <Text>${2:first}</Text>",
+      "    </View>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:ComponentName}"
+    ],
+    "description": "React Native Functional Export Component"
+  },
+  "React Native Functional Export Component with Styles": {
+    "prefix": "rnfes",
+    "body": [
+      "import { StyleSheet, Text, View } from 'react-native'",
+      "import React from 'react'",
+      "",
+      "const ${1:ComponentName} = () => {",
+      "  return (",
+      "    <View>",
+      "      <Text>${2:first}</Text>",
+      "    </View>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:ComponentName}",
+      "",
+      "const styles = StyleSheet.create({})"
+    ],
+    "description": "React Native Functional Export Component with Styles"
+  },
+  "React Native Functional Component": {
+    "prefix": "rnf",
+    "body": [
+      "import { View, Text } from 'react-native'",
+      "import React from 'react'",
+      "",
+      "export default function ${1:ComponentName}() {",
+      "  return (",
+      "    <View>",
+      "      <Text>${2:first}</Text>",
+      "    </View>",
+      "  )",
+      "}"
+    ],
+    "description": "React Native Functional Component"
+  },
+  "React Native Functional Component with Styles": {
+    "prefix": "rnfs",
+    "body": [
+      "import { StyleSheet, Text, View } from 'react-native'",
+      "import React from 'react'",
+      "",
+      "export default function ${1:ComponentName}() {",
+      "  return (",
+      "    <View>",
+      "      <Text>${2:first}</Text>",
+      "    </View>",
+      "  )",
+      "}",
+      "",
+      "const styles = StyleSheet.create({})"
+    ],
+    "description": "React Native Functional Component with Styles"
+  },
+  "React Native extended functional component": {
+    "prefix": "rnxf",
+    "body": [
+      "import React, { useState, useEffect } from 'react'",
+      "import { View, SafeAreaView, Text, StyleSheet } from 'react-native'",
+      "",
+      "const ${1:ComponentName} = ({ ${2:props} }) => {",
+      "  const [${3:state}, ${4:setState}] = useState(${5:initialState})",
+      "",
+      "  useEffect(() => {",
+      "    // Effect here",
+      "  }, [])",
+      "",
+      "  return (",
+      "    <SafeAreaView style={styles.container}>",
+      "      <View>",
+      "        <Text>${6:Hello, World!}</Text>",
+      "      </View>",
+      "    </SafeAreaView>",
+      "  )",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "  container: {",
+      "    flex: 1,",
+      "    justifyContent: 'center',",
+      "    alignItems: 'center',",
+      "  },",
+      "})",
+      "",
+      "export default ${1:ComponentName}"
+    ],
+    "description": "React Native extended functional component"
+  },
+  "Testing describe block": {
+    "prefix": "desc",
+    "body": ["describe('${1:first}', () => { ${2:second} })"],
+    "description": "Testing describe block"
+  },
+  "Testing test block": {
+    "prefix": "test",
+    "body": ["test('should ${1:first}', () => { ${2:second} })"],
+    "description": "Testing test block"
+  },
+  "Testing asynchronous test block": {
+    "prefix": "testa",
+    "body": ["test('should ${1:first}', async () => { ${2:second} })"],
+    "description": "Testing asynchronous test block"
+  },
+  "Testing it block": {
+    "prefix": "tit",
+    "body": ["it('should ${1:first}', () => { ${2:second} })"],
+    "description": "Testing it block"
+  },
+  "Testing asynchronous it block": {
+    "prefix": "tita",
+    "body": ["it('should ${1:first}', async () => { ${2:second} })"],
+    "description": "Testing asynchronous it block"
+  },
+  "Setup React Test": {
+    "prefix": "stest",
+    "body": [
+      "import React from 'react'",
+      "import renderer from 'react-test-renderer'",
+      "",
+      "import { ${1:ComponentName} } from '../${1:ComponentName}'",
+      "",
+      "describe('<${1:ComponentName} />', () => {",
+      "  const defaultProps = {}",
+      "  const wrapper = renderer.create(<${1:ComponentName} {...defaultProps} />)",
+      "",
+      "  test('render', () => {",
+      "    expect(wrapper).toMatchSnapshot()",
+      "  })",
+      "})"
+    ],
+    "description": "Setup React Test"
+  },
+  "Setup React Native Test": {
+    "prefix": "sntest",
+    "body": [
+      "import 'react-native'",
+      "import React from 'react'",
+      "import renderer from 'react-test-renderer'",
+      "",
+      "import ${1:ComponentName} from '../${1:ComponentName}'",
+      "",
+      "describe('<${1:ComponentName} />', () => {",
+      "  const defaultProps = {}",
+      "  const wrapper = renderer.create(<${1:ComponentName} {...defaultProps} />)",
+      "",
+      "  test('render', () => {",
+      "    expect(wrapper).toMatchSnapshot()",
+      "  })",
+      "})"
+    ],
+    "description": "Setup React Native Test"
+  },
+  "Setup React Component Test with Redux": {
+    "prefix": "srtest",
+    "body": [
+      "import React from 'react'",
+      "import renderer from 'react-test-renderer'",
+      "import { Provider } from 'react-redux'",
+      "",
+      "import store from '~/store'",
+      "import { ${1:ComponentName} } from '../${1:ComponentName}'",
+      "",
+      "describe('<${1:ComponentName} />', () => {",
+      "  const defaultProps = {}",
+      "  const wrapper = renderer.create(",
+      "    <Provider store={store}>",
+      "     <${1:ComponentName} {...defaultProps} />",
+      "    </Provider>,",
+      "  )",
+      "",
+      "  test('render', () => {",
+      "    expect(wrapper).toMatchSnapshot()",
+      "  })",
+      "})"
+    ],
+    "description": "Setup React Component Test with Redux"
+  },
+  "Setup React Native Test with Redux": {
+    "prefix": "snrtest",
+    "body": [
+      "import 'react-native'",
+      "import React from 'react'",
+      "import renderer from 'react-test-renderer'",
+      "import { Provider } from 'react-redux'",
+      "",
+      "import store from '~/store'",
+      "import ${1:ComponentName} from '../${1:ComponentName}'",
+      "",
+      "describe('<${1:ComponentName} />', () => {",
+      "  const defaultProps = {}",
+      "  const wrapper = renderer.create(",
+      "    <Provider store={store}>",
+      "      <${1:ComponentName} {...defaultProps} />",
+      "    </Provider>,",
+      "  )",
+      "",
+      "  test('render', () => {",
+      "    expect(wrapper).toMatchSnapshot()",
+      "  })",
+      "})"
+    ],
+    "description": "Setup React Native Test with Redux"
+  },
+  "Array prop type": {
+    "prefix": "pta",
+    "body": ["PropTypes.array"],
+    "description": "Array prop type"
+  },
+  "Array prop type required": {
+    "prefix": "ptar",
+    "body": ["PropTypes.array.isRequired"],
+    "description": "Array prop type required"
+  },
+  "Bool prop type": {
+    "prefix": "ptb",
+    "body": ["PropTypes.bool"],
+    "description": "Bool prop type"
+  },
+  "Bool prop type required": {
+    "prefix": "ptbr",
+    "body": ["PropTypes.bool.isRequired"],
+    "description": "Bool prop type required"
+  },
+  "Func prop type": {
+    "prefix": "ptf",
+    "body": ["PropTypes.func"],
+    "description": "Func prop type"
+  },
+  "Func prop type required": {
+    "prefix": "ptfr",
+    "body": ["PropTypes.func.isRequired"],
+    "description": "Func prop type required"
+  },
+  "Number prop type": {
+    "prefix": "ptn",
+    "body": ["PropTypes.number"],
+    "description": "Number prop type"
+  },
+  "Number prop type required": {
+    "prefix": "ptnr",
+    "body": ["PropTypes.number.isRequired"],
+    "description": "Number prop type required"
+  },
+  "Object prop type": {
+    "prefix": "pto",
+    "body": ["PropTypes.object"],
+    "description": "Object prop type"
+  },
+  "Object prop type required": {
+    "prefix": "ptor",
+    "body": ["PropTypes.object.isRequired"],
+    "description": "Object prop type required"
+  },
+  "String prop type": {
+    "prefix": "pts",
+    "body": ["PropTypes.string"],
+    "description": "String prop type"
+  },
+  "String prop type required": {
+    "prefix": "ptsr",
+    "body": ["PropTypes.string.isRequired"],
+    "description": "String prop type required"
+  },
+  "Node prop type": {
+    "prefix": "ptnd",
+    "body": ["PropTypes.node"],
+    "description": "Node prop type"
+  },
+  "Node prop type required": {
+    "prefix": "ptndr",
+    "body": ["PropTypes.node.isRequired"],
+    "description": "Node prop type required"
+  },
+  "Element prop type": {
+    "prefix": "ptel",
+    "body": ["PropTypes.element"],
+    "description": "Element prop type"
+  },
+  "Element prop type required": {
+    "prefix": "ptelr",
+    "body": ["PropTypes.element.isRequired"],
+    "description": "Element prop type required"
+  },
+  "InstanceOf prop type": {
+    "prefix": "pti",
+    "body": ["PropTypes.instanceOf($0)"],
+    "description": "InstanceOf prop type"
+  },
+  "InstanceOf prop type required": {
+    "prefix": "ptir",
+    "body": ["PropTypes.instanceOf($0).isRequired"],
+    "description": "InstanceOf prop type required"
+  },
+  "Enum prop type": {
+    "prefix": "pte",
+    "body": ["PropTypes.oneOf(['$0'])"],
+    "description": "Enum prop type"
+  },
+  "Enum prop type required": {
+    "prefix": "pter",
+    "body": ["PropTypes.oneOf(['$0']).isRequired"],
+    "description": "Enum prop type required"
+  },
+  "OneOfType prop type": {
+    "prefix": "ptet",
+    "body": ["PropTypes.oneOfType([", "  $0", "])"],
+    "description": "OneOfType prop type"
+  },
+  "OneOfType prop type required": {
+    "prefix": "ptetr",
+    "body": ["PropTypes.oneOfType([", "  $0", "]).isRequired"],
+    "description": "OneOfType prop type required"
+  },
+  "ArrayOf prop type": {
+    "prefix": "ptao",
+    "body": ["PropTypes.arrayOf($0)"],
+    "description": "ArrayOf prop type"
+  },
+  "ArrayOf prop type required": {
+    "prefix": "ptaor",
+    "body": ["PropTypes.arrayOf($0).isRequired"],
+    "description": "ArrayOf prop type required"
+  },
+  "ObjectOf prop type": {
+    "prefix": "ptoo",
+    "body": ["PropTypes.objectOf($0)"],
+    "description": "ObjectOf prop type"
+  },
+  "ObjectOf prop type required": {
+    "prefix": "ptoor",
+    "body": ["PropTypes.objectOf($0).isRequired"],
+    "description": "ObjectOf prop type required"
+  },
+  "Shape prop type": {
+    "prefix": "ptsh",
+    "body": ["PropTypes.shape({", "  $0", "})"],
+    "description": "Shape prop type"
+  },
+  "Shape prop type required": {
+    "prefix": "ptshr",
+    "body": ["PropTypes.shape({", "  $0", "}).isRequired"],
+    "description": "Shape prop type required"
+  },
+  "Exact prop type": {
+    "prefix": "ptex",
+    "body": ["PropTypes.exact({", "  $0", "})"],
+    "description": "Exact prop type"
+  },
+  "Exact prop type required": {
+    "prefix": "ptexr",
+    "body": ["PropTypes.exact({", "  $0", "}).isRequired"],
+    "description": "Exact prop type required"
+  },
+  "Any prop type": {
+    "prefix": "ptany",
+    "body": ["PropTypes.any"],
+    "description": "Any prop type"
+  },
+  "Anonymous function": {
+    "prefix": "anfn",
+    "body": ["(${1:first}) => { ${2:second} }"],
+    "description": "Anonymous function"
+  },
+  "Named function": {
+    "prefix": "nfn",
+    "body": ["const ${1:first} = (${2:second}) => { ${3:third} }"],
+    "description": "Named function"
+  },
+  "Method inside a class": {
+    "prefix": "met",
+    "body": ["${1:first} = (${2:second}) => {${3:third}}"],
+    "description": "Method inside a class"
+  },
+  "Getter property": {
+    "prefix": "pge",
+    "body": ["get ${1:first}() {", "  return this.${2:second}", "}"],
+    "description": "Getter property"
+  },
+  "Setter property": {
+    "prefix": "pse",
+    "body": ["set ${1:first}(${2:second}) {${3:third}}"],
+    "description": "Setter property"
+  },
+  "forEach": {
+    "prefix": "fre",
+    "body": ["${1:first}.forEach(${2:second} => {${3:third}})"],
+    "description": "forEach"
+  },
+  "for...of": {
+    "prefix": "fof",
+    "body": ["for(let ${1:first} of ${2:second}) {${3:third}}"],
+    "description": "for...of"
+  },
+  "for...in": {
+    "prefix": "fin",
+    "body": ["for(let ${1:first} in ${2:second}) {${3:third}}"],
+    "description": "for...in"
+  },
+  "Destructing Object": {
+    "prefix": "dob",
+    "body": ["const {${2:second}} = ${1:first}"],
+    "description": "Destructing Object"
+  },
+  "Destructing Array": {
+    "prefix": "dar",
+    "body": ["const [${2:second}] = ${1:first}"],
+    "description": "Destructing Array"
+  },
+  "setInterval (JS)": {
+    "prefix": "sti",
+    "body": ["setInterval(() => { ${1:first} }, ${2:second})"],
+    "description": "setInterval"
+  },
+  "setTimeout (JS)": {
+    "prefix": "sto",
+    "body": ["setTimeout(() => { ${1:first} }, ${2:second})"],
+    "description": "setTimeout"
+  },
+  "Promise (JS)": {
+    "prefix": "prom",
+    "body": ["return new Promise((resolve, reject) => { ${1:first} })"],
+    "description": "Promise"
+  },
+  "Comment Big Block": {
+    "prefix": "cmmb",
+    "body": ["/**", " * ${1:first}", " */"],
+    "description": "Comment Big Block"
+  },
+  "typeof": {
+    "prefix": "tpf",
+    "body": ["typeof ${1:first}"],
+    "description": "typeof"
+  },
+  "Class Constructor": {
+    "prefix": "rconst",
+    "body": [
+      "constructor(props) {",
+      "  super(props)",
+      "",
+      "  this.state = {",
+      "     ${1:first}",
+      "  }",
+      "}"
+    ],
+    "description": "Class Constructor"
+  },
+  "Empty State": {
+    "prefix": "est",
+    "body": ["state = { ${1:first} }"],
+    "description": "Empty State"
+  },
+  "componentDidMount": {
+    "prefix": "cdm",
+    "body": ["componentDidMount() { ${1:first} }"],
+    "description": "componentDidMount"
+  },
+  "shouldComponentUpdate": {
+    "prefix": "scu",
+    "body": ["shouldComponentUpdate(nextProps, nextState) { ${1:first} }"],
+    "description": "shouldComponentUpdate"
+  },
+  "componentDidUpdate": {
+    "prefix": "cdup",
+    "body": ["componentDidUpdate(prevProps, prevState) { ${1:first}}"],
+    "description": "componentDidUpdate"
+  },
+  "componentWillUnmount": {
+    "prefix": "cwun",
+    "body": ["componentWillUnmount() {${1:first} }"],
+    "description": "componentWillUnmount"
+  },
+  "getDerivedStateFromProps": {
+    "prefix": "gdsfp",
+    "body": ["static getDerivedStateFromProps(props, state) {${1:first}}"],
+    "description": "getDerivedStateFromProps"
+  },
+  "getSnapshotBeforeUpdate": {
+    "prefix": "gsbu",
+    "body": [
+      "getSnapshotBeforeUpdate = (prevProps, prevState) => {${1:first}}"
+    ],
+    "description": "getSnapshotBeforeUpdate"
+  },
+  "Create React context": {
+    "prefix": "rcontext",
+    "body": ["const ${1:first} = React.createContext()"],
+    "description": "Create React context"
+  },
+  "Create ref": {
+    "prefix": "cref",
+    "body": ["this.${1:first}Ref = React.createRef()"],
+    "description": "Create ref"
+  },
+  "setState object": {
+    "prefix": "sst",
+    "body": ["this.setState({${1:first}})"],
+    "description": "setState object"
+  },
+  "setState function": {
+    "prefix": "ssf",
+    "body": ["this.setState((state, props) => { return { ${1:first} }})"],
+    "description": "setState function"
+  },
+  "this.props": {
+    "prefix": "props",
+    "body": ["this.props.${1:first}"],
+    "description": "this.props"
+  },
+  "this.state": {
+    "prefix": "state",
+    "body": ["this.state.${1:first}"],
+    "description": "this.state"
+  },
+  "Bind this": {
+    "prefix": "bnd",
+    "body": ["this.${1:first} = this.${1:first}.bind(this)"],
+    "description": "Bind this"
+  },
+  "Destruct props": {
+    "prefix": "cp",
+    "body": ["const { ${1:first} } = this.props"],
+    "description": "Destruct props"
+  },
+  "Destruct state": {
+    "prefix": "cs",
+    "body": ["const { ${1:first} } = this.state"],
+    "description": "Destruct state"
+  },
+  "Function": {
+    "prefix": "fn",
+    "body": [
+      "function ${1:functionName}(${2:params}): ${3:void} {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Function"
+  },
+  "Arrow Function": {
+    "prefix": "af",
+    "body": ["const ${1:functionName} = (${2:params}): ${3:void} => {$0}"],
+    "description": "Arrow Function"
+  },
+  "Arrow Function Implicit Return": {
+    "prefix": "afe",
+    "body": ["const ${1:functionName} = (${2:params}): ${3:ReturnType} => $0"],
+    "description": "Arrow Function Implicit Return"
+  },
+  "Async Function": {
+    "prefix": "asf",
+    "body": [
+      "async function ${1:functionName}(${2:params}): Promise<${3:void}> {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Async Function"
+  },
+  "Async Arrow Function": {
+    "prefix": "asa",
+    "body": [
+      "const ${1:functionName} = async (${2:params}): Promise<${3:void}> => {$0}"
+    ],
+    "description": "Async Arrow Function"
+  },
+  "Anonymous Function": {
+    "prefix": "afn",
+    "body": ["(${1:params}): ${2:void} => {", "\t$0", "}"],
+    "description": "Anonymous Function"
+  },
+  "IIFE": {
+    "prefix": "iife",
+    "body": ["(function(${1:params}): ${2:void} {", "\t$0", "})();"],
+    "description": "IIFE"
+  },
+  "Async IIFE": {
+    "prefix": "aiife",
+    "body": [
+      "(async function(${1:params}): Promise<${2:void}> {",
+      "\t$0",
+      "})();"
+    ],
+    "description": "Async IIFE"
+  },
+  "For Loop": {
+    "prefix": "for",
+    "body": [
+      "for (let ${1:i} = 0; ${1:i} < ${2:array}.length; ${1:i}++) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "For Loop"
+  },
+  "For Of Loop": {
+    "prefix": "forof",
+    "body": ["for (const ${1:item} of ${2:array}) {", "\t$0", "}"],
+    "description": "For Of Loop"
+  },
+  "For In Loop": {
+    "prefix": "forin",
+    "body": [
+      "for (const ${1:key} in ${2:object}) {",
+      "\tif (${2:object}.hasOwnProperty(${1:key})) {",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ],
+    "description": "For In Loop"
+  },
+  "While Loop": {
+    "prefix": "while",
+    "body": ["while (${1:condition}) {", "\t$0", "}"],
+    "description": "While Loop"
+  },
+  "Do While Loop": {
+    "prefix": "dowhile",
+    "body": ["do {", "\t$0", "} while (${1:condition});"],
+    "description": "Do While Loop"
+  },
+  "forEach (typed)": {
+    "prefix": "fre",
+    "body": ["${1:array}.forEach((${2:item}: ${3:Type}) => {$0});"],
+    "description": "forEach (typed)"
+  },
+  "Map (TS)": {
+    "prefix": "map",
+    "body": ["${1:array}.map((${2:item}: ${3:Type}): ${4:ReturnType} => $0)"],
+    "description": "Map"
+  },
+  "Filter": {
+    "prefix": "filter",
+    "body": ["${1:array}.filter((${2:item}: ${3:Type}): boolean => $0)"],
+    "description": "Filter"
+  },
+  "Reduce": {
+    "prefix": "reduce",
+    "body": [
+      "${1:array}.reduce((${2:acc}: ${3:AccType}, ${4:item}: ${5:Type}): ${3:AccType} => {$0}, ${6:initialValue})"
+    ],
+    "description": "Reduce"
+  },
+  "Find": {
+    "prefix": "find",
+    "body": ["${1:array}.find((${2:item}: ${3:Type}): boolean => $0)"],
+    "description": "Find"
+  },
+  "Find Index": {
+    "prefix": "findindex",
+    "body": ["${1:array}.findIndex((${2:item}: ${3:Type}): boolean => $0)"],
+    "description": "Find Index"
+  },
+  "Some": {
+    "prefix": "some",
+    "body": ["${1:array}.some((${2:item}: ${3:Type}): boolean => $0)"],
+    "description": "Some"
+  },
+  "Every": {
+    "prefix": "every",
+    "body": ["${1:array}.every((${2:item}: ${3:Type}): boolean => $0)"],
+    "description": "Every"
+  },
+  "If Statement": {
+    "prefix": "if",
+    "body": ["if (${1:condition}) {", "\t$0", "}"],
+    "description": "If Statement"
+  },
+  "If Else Statement": {
+    "prefix": "ifelse",
+    "body": ["if (${1:condition}) {", "\t$0", "} else {", "\t", "}"],
+    "description": "If Else Statement"
+  },
+  "Else If Statement": {
+    "prefix": "elseif",
+    "body": ["else if (${1:condition}) {", "\t$0", "}"],
+    "description": "Else If Statement"
+  },
+  "Ternary Operator": {
+    "prefix": "ternary",
+    "body": ["${1:condition} ? ${2:true} : ${3:false}"],
+    "description": "Ternary Operator"
+  },
+  "Switch Statement": {
+    "prefix": "switch",
+    "body": [
+      "switch (${1:expression}) {",
+      "\tcase ${2:value}:",
+      "\t\t$0",
+      "\t\tbreak;",
+      "\tdefault:",
+      "\t\tbreak;",
+      "}"
+    ],
+    "description": "Switch Statement"
+  },
+  "Try Catch": {
+    "prefix": "try",
+    "body": [
+      "try {",
+      "\t$0",
+      "} catch (${1:error}: unknown) {",
+      "\tconsole.error(${1:error});",
+      "}"
+    ],
+    "description": "Try Catch"
+  },
+  "Try Catch Finally": {
+    "prefix": "tryf",
+    "body": [
+      "try {",
+      "\t$0",
+      "} catch (${1:error}: unknown) {",
+      "\tconsole.error(${1:error});",
+      "} finally {",
+      "\t",
+      "}"
+    ],
+    "description": "Try Catch Finally"
+  },
+  "Promise (TS)": {
+    "prefix": "promise",
+    "body": ["new Promise<${1:Type}>((resolve, reject) => {", "\t$0", "})"],
+    "description": "Promise"
+  },
+  "Promise Then": {
+    "prefix": "then",
+    "body": [
+      "${1:promise}",
+      "\t.then((${2:result}: ${3:Type}) => {$0})",
+      "\t.catch((${4:error}: unknown) => {console.error(${4:error});});"
+    ],
+    "description": "Promise Then"
+  },
+  "Async Await": {
+    "prefix": "await",
+    "body": ["const ${1:result}: ${2:Type} = await ${3:promise};"],
+    "description": "Async Await"
+  },
+  "Async Await Try": {
+    "prefix": "awaittry",
+    "body": [
+      "try {",
+      "\tconst ${1:result}: ${2:Type} = await ${3:promise};",
+      "\t$0",
+      "} catch (${4:error}: unknown) {",
+      "\tconsole.error(${4:error});",
+      "}"
+    ],
+    "description": "Async Await Try"
+  },
+  "Interface": {
+    "prefix": "int",
+    "body": [
+      "interface ${1:InterfaceName} {",
+      "\t${2:property}: ${3:Type};$0",
+      "}"
+    ],
+    "description": "Interface"
+  },
+  "Type Alias": {
+    "prefix": "typ",
+    "body": ["type ${1:TypeName} = ${2:Type};"],
+    "description": "Type Alias"
+  },
+  "Enum": {
+    "prefix": "enu",
+    "body": ["enum ${1:EnumName} {", "\t${2:Member} = ${3:Value},$0", "}"],
+    "description": "Enum"
+  },
+  "Const Enum": {
+    "prefix": "cenu",
+    "body": [
+      "const enum ${1:EnumName} {",
+      "\t${2:Member} = ${3:Value},$0",
+      "}"
+    ],
+    "description": "Const Enum"
+  },
+  "Type Guard": {
+    "prefix": "tg",
+    "body": [
+      "function is${1:Type}(value: unknown): value is ${1:Type} {",
+      "\treturn $0;",
+      "}"
+    ],
+    "description": "Type Guard"
+  },
+  "Type Assertion": {
+    "prefix": "as",
+    "body": ["const ${1:variable} = ${2:value} as ${3:Type};"],
+    "description": "Type Assertion"
+  },
+  "Generic Function": {
+    "prefix": "gfn",
+    "body": [
+      "function ${1:functionName}<${2:T}>(${3:param}: ${2:T}): ${4:ReturnType} {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Generic Function"
+  },
+  "Generic Arrow Function": {
+    "prefix": "gaf",
+    "body": [
+      "const ${1:functionName} = <${2:T}>(${3:param}: ${2:T}): ${4:ReturnType} => {$0}"
+    ],
+    "description": "Generic Arrow Function"
+  },
+  "Generic Interface": {
+    "prefix": "gint",
+    "body": [
+      "interface ${1:InterfaceName}<${2:T}> {",
+      "\t${3:property}: ${2:T};$0",
+      "}"
+    ],
+    "description": "Generic Interface"
+  },
+  "Generic Type": {
+    "prefix": "gtyp",
+    "body": ["type ${1:TypeName}<${2:T}> = ${3:Type};"],
+    "description": "Generic Type"
+  },
+  "Mapped Type": {
+    "prefix": "mtyp",
+    "body": ["type ${1:TypeName}<T> = { [K in keyof T]: ${2:Type} };"],
+    "description": "Mapped Type"
+  },
+  "Conditional Type": {
+    "prefix": "ctyp",
+    "body": [
+      "type ${1:TypeName}<T> = T extends ${2:Type} ? ${3:TrueType} : ${4:FalseType};"
+    ],
+    "description": "Conditional Type"
+  },
+  "Utility Type Pick": {
+    "prefix": "pick",
+    "body": ["type ${1:NewType} = Pick<${2:Type}, '${3:keys}'>;"],
+    "description": "Utility Type Pick"
+  },
+  "Utility Type Omit": {
+    "prefix": "omit",
+    "body": ["type ${1:NewType} = Omit<${2:Type}, '${3:keys}'>;"],
+    "description": "Utility Type Omit"
+  },
+  "Utility Type Partial": {
+    "prefix": "partial",
+    "body": ["type ${1:NewType} = Partial<${2:Type}>;"],
+    "description": "Utility Type Partial"
+  },
+  "Utility Type Required": {
+    "prefix": "required",
+    "body": ["type ${1:NewType} = Required<${2:Type}>;"],
+    "description": "Utility Type Required"
+  },
+  "Utility Type Readonly": {
+    "prefix": "readonly",
+    "body": ["type ${1:NewType} = Readonly<${2:Type}>;"],
+    "description": "Utility Type Readonly"
+  },
+  "Utility Type Record": {
+    "prefix": "record",
+    "body": ["type ${1:NewType} = Record<${2:Keys}, ${3:Type}>;"],
+    "description": "Utility Type Record"
+  },
+  "Utility Type Exclude": {
+    "prefix": "exclude",
+    "body": ["type ${1:NewType} = Exclude<${2:Type}, ${3:ExcludedType}>;"],
+    "description": "Utility Type Exclude"
+  },
+  "Utility Type Extract": {
+    "prefix": "extract",
+    "body": ["type ${1:NewType} = Extract<${2:Type}, ${3:ExtractedType}>;"],
+    "description": "Utility Type Extract"
+  },
+  "Utility Type NonNullable": {
+    "prefix": "nonnull",
+    "body": ["type ${1:NewType} = NonNullable<${2:Type}>;"],
+    "description": "Utility Type NonNullable"
+  },
+  "Utility Type ReturnType": {
+    "prefix": "rettyp",
+    "body": ["type ${1:NewType} = ReturnType<typeof ${2:function}>;"],
+    "description": "Utility Type ReturnType"
+  },
+  "Utility Type Parameters": {
+    "prefix": "params",
+    "body": ["type ${1:NewType} = Parameters<typeof ${2:function}>;"],
+    "description": "Utility Type Parameters"
+  },
+  "Class": {
+    "prefix": "cls",
+    "body": [
+      "class ${1:ClassName} {",
+      "\tconstructor(${2:params}) {",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ],
+    "description": "Class"
+  },
+  "Class With Properties": {
+    "prefix": "clsp",
+    "body": [
+      "class ${1:ClassName} {",
+      "\tprivate ${2:property}: ${3:Type};",
+      "",
+      "\tconstructor(${2:property}: ${3:Type}) {",
+      "\t\tthis.${2:property} = ${2:property};",
+      "\t}$0",
+      "}"
+    ],
+    "description": "Class With Properties"
+  },
+  "Class With Method": {
+    "prefix": "clsm",
+    "body": [
+      "class ${1:ClassName} {",
+      "\tprivate ${2:property}: ${3:Type};",
+      "",
+      "\tconstructor(${2:property}: ${3:Type}) {",
+      "\t\tthis.${2:property} = ${2:property};",
+      "\t}",
+      "",
+      "\tpublic ${4:methodName}(${5:params}): ${6:ReturnType} {",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ],
+    "description": "Class With Method"
+  },
+  "Abstract Class": {
+    "prefix": "acls",
+    "body": [
+      "abstract class ${1:ClassName} {",
+      "\tabstract ${2:methodName}(${3:params}): ${4:ReturnType};$0",
+      "}"
+    ],
+    "description": "Abstract Class"
+  },
+  "Class Implements": {
+    "prefix": "clsi",
+    "body": [
+      "class ${1:ClassName} implements ${2:InterfaceName} {",
+      "\tconstructor(${3:params}) {",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ],
+    "description": "Class Implements"
+  },
+  "Class Extends": {
+    "prefix": "clse",
+    "body": [
+      "class ${1:ClassName} extends ${2:ParentClass} {",
+      "\tconstructor(${3:params}) {",
+      "\t\tsuper(${3:params});",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ],
+    "description": "Class Extends"
+  },
+  "Generic Class": {
+    "prefix": "gcls",
+    "body": [
+      "class ${1:ClassName}<${2:T}> {",
+      "\tprivate ${3:property}: ${2:T};",
+      "",
+      "\tconstructor(${3:property}: ${2:T}) {",
+      "\t\tthis.${3:property} = ${3:property};",
+      "\t}$0",
+      "}"
+    ],
+    "description": "Generic Class"
+  },
+  "Class Getter": {
+    "prefix": "get",
+    "body": [
+      "get ${1:propertyName}(): ${2:Type} {",
+      "\treturn this.${3:_property};",
+      "}"
+    ],
+    "description": "Class Getter"
+  },
+  "Class Setter": {
+    "prefix": "set",
+    "body": [
+      "set ${1:propertyName}(${2:value}: ${3:Type}) {",
+      "\tthis.${4:_property} = ${2:value};",
+      "}"
+    ],
+    "description": "Class Setter"
+  },
+  "Static Method": {
+    "prefix": "static",
+    "body": [
+      "static ${1:methodName}(${2:params}): ${3:ReturnType} {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Static Method"
+  },
+  "Decorator": {
+    "prefix": "dec",
+    "body": [
+      "function ${1:decoratorName}(${2:params}) {",
+      "\treturn function(target: any) {",
+      "\t\t$0",
+      "\t};",
+      "}"
+    ],
+    "description": "Decorator"
+  },
+  "Method Decorator": {
+    "prefix": "mdec",
+    "body": [
+      "function ${1:decoratorName}(target: any, propertyKey: string, descriptor: PropertyDescriptor) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Method Decorator"
+  },
+  "Property Decorator": {
+    "prefix": "pdec",
+    "body": [
+      "function ${1:decoratorName}(target: any, propertyKey: string) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Property Decorator"
+  },
+  "Parameter Decorator": {
+    "prefix": "pardec",
+    "body": [
+      "function ${1:decoratorName}(target: any, propertyKey: string, parameterIndex: number) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Parameter Decorator"
+  },
+  "Namespace": {
+    "prefix": "namespace",
+    "body": [
+      "namespace ${1:NamespaceName} {",
+      "\texport ${2:declaration}$0",
+      "}"
+    ],
+    "description": "Namespace"
+  },
+  "Module": {
+    "prefix": "module",
+    "body": ["module ${1:ModuleName} {", "\texport ${2:declaration}$0", "}"],
+    "description": "Module"
+  },
+  "Declare Module": {
+    "prefix": "decmod",
+    "body": [
+      "declare module '${1:moduleName}' {",
+      "\texport ${2:declaration}$0",
+      "}"
+    ],
+    "description": "Declare Module"
+  },
+  "Declare Global": {
+    "prefix": "decglobal",
+    "body": ["declare global {", "\t${1:declaration}$0", "}"],
+    "description": "Declare Global"
+  },
+  "Const": {
+    "prefix": "const",
+    "body": ["const ${1:name}: ${2:Type} = ${3:value};"],
+    "description": "Const"
+  },
+  "Let": {
+    "prefix": "let",
+    "body": ["let ${1:name}: ${2:Type} = ${3:value};"],
+    "description": "Let"
+  },
+  "Const Assertion": {
+    "prefix": "cass",
+    "body": ["const ${1:name} = ${2:value} as const;"],
+    "description": "Const Assertion"
+  },
+  "Destructuring Array (typed)": {
+    "prefix": "desa",
+    "body": [
+      "const [${1:first}, ${2:second}]: [${3:Type1}, ${4:Type2}] = ${5:array};"
+    ],
+    "description": "Destructuring Array (typed)"
+  },
+  "Destructuring Object (typed)": {
+    "prefix": "deso",
+    "body": [
+      "const { ${1:property} }: { ${1:property}: ${2:Type} } = ${3:object};"
+    ],
+    "description": "Destructuring Object (typed)"
+  },
+  "Spread Array": {
+    "prefix": "spra",
+    "body": ["[...${1:array}]"],
+    "description": "Spread Array"
+  },
+  "Spread Object": {
+    "prefix": "spro",
+    "body": ["{ ...${1:object} }"],
+    "description": "Spread Object"
+  },
+  "Rest Parameters": {
+    "prefix": "rest",
+    "body": ["(...${1:args}: ${2:Type}[]) => {$0}"],
+    "description": "Rest Parameters"
+  },
+  "setTimeout (TS)": {
+    "prefix": "sto",
+    "body": ["setTimeout(() => {", "\t$0", "}, ${1:delay});"],
+    "description": "setTimeout"
+  },
+  "setInterval (TS)": {
+    "prefix": "si",
+    "body": ["setInterval(() => {", "\t$0", "}, ${1:delay});"],
+    "description": "setInterval"
+  },
+  "clearTimeout": {
+    "prefix": "cto",
+    "body": ["clearTimeout(${1:timeoutId});"],
+    "description": "clearTimeout"
+  },
+  "clearInterval": {
+    "prefix": "ci",
+    "body": ["clearInterval(${1:intervalId});"],
+    "description": "clearInterval"
+  },
+  "Fetch": {
+    "prefix": "fetch",
+    "body": [
+      "fetch('${1:url}')",
+      "\t.then((response: Response) => response.json())",
+      "\t.then((data: ${2:Type}) => {$0})",
+      "\t.catch((error: unknown) => console.error(error));"
+    ],
+    "description": "Fetch"
+  },
+  "Fetch Async": {
+    "prefix": "feta",
+    "body": [
+      "const response: Response = await fetch('${1:url}');",
+      "const data: ${2:Type} = await response.json();",
+      "$0"
+    ],
+    "description": "Fetch Async"
+  },
+  "Fetch POST": {
+    "prefix": "fetp",
+    "body": [
+      "fetch('${1:url}', {",
+      "\tmethod: 'POST',",
+      "\theaders: {",
+      "\t\t'Content-Type': 'application/json'",
+      "\t},",
+      "\tbody: JSON.stringify(${2:data})",
+      "})",
+      "\t.then((response: Response) => response.json())",
+      "\t.then((data: ${3:Type}) => {$0})",
+      "\t.catch((error: unknown) => console.error(error));"
+    ],
+    "description": "Fetch POST"
+  },
+  "Fetch Generic": {
+    "prefix": "fetg",
+    "body": [
+      "async function ${1:fetchData}<T>(url: string): Promise<T> {",
+      "\tconst response: Response = await fetch(url);",
+      "\tconst data: T = await response.json();",
+      "\treturn data;",
+      "}"
+    ],
+    "description": "Fetch Generic"
+  },
+  "JSON Parse": {
+    "prefix": "jparse",
+    "body": ["JSON.parse(${1:jsonString}) as ${2:Type}"],
+    "description": "JSON Parse"
+  },
+  "JSON Stringify": {
+    "prefix": "jstr",
+    "body": ["JSON.stringify(${1:object})"],
+    "description": "JSON Stringify"
+  },
+  "JSON Stringify Pretty": {
+    "prefix": "jstrp",
+    "body": ["JSON.stringify(${1:object}, null, 2)"],
+    "description": "JSON Stringify Pretty"
+  },
+  "Object Keys": {
+    "prefix": "okeys",
+    "body": ["Object.keys(${1:object}) as Array<keyof typeof ${1:object}>"],
+    "description": "Object Keys"
+  },
+  "Object Values": {
+    "prefix": "ovals",
+    "body": ["Object.values(${1:object})"],
+    "description": "Object Values"
+  },
+  "Object Entries": {
+    "prefix": "oents",
+    "body": [
+      "Object.entries(${1:object}) as Array<[keyof typeof ${1:object}, typeof ${1:object}[keyof typeof ${1:object}]]>"
+    ],
+    "description": "Object Entries"
+  },
+  "Object Assign": {
+    "prefix": "oassign",
+    "body": [
+      "Object.assign<${1:Type}, ${2:SourceType}>({}, ${3:target}, ${4:source})"
+    ],
+    "description": "Object Assign"
+  },
+  "Object Freeze": {
+    "prefix": "ofreeze",
+    "body": ["Object.freeze(${1:object})"],
+    "description": "Object Freeze"
+  },
+  "Typed Array": {
+    "prefix": "tarr",
+    "body": ["const ${1:name}: ${2:Type}[] = [${3:values}];"],
+    "description": "Typed Array"
+  },
+  "Readonly Array": {
+    "prefix": "rarr",
+    "body": ["const ${1:name}: readonly ${2:Type}[] = [${3:values}];"],
+    "description": "Readonly Array"
+  },
+  "Tuple": {
+    "prefix": "tup",
+    "body": [
+      "const ${1:name}: [${2:Type1}, ${3:Type2}] = [${4:value1}, ${5:value2}];"
+    ],
+    "description": "Tuple"
+  },
+  "Set": {
+    "prefix": "newset",
+    "body": ["new Set<${1:Type}>([${2:values}])"],
+    "description": "Set"
+  },
+  "Map (TS) 2": {
+    "prefix": "newmap",
+    "body": ["new Map<${1:KeyType}, ${2:ValueType}>([[${3:key}, ${4:value}]])"],
+    "description": "Map"
+  },
+  "WeakSet": {
+    "prefix": "newweakset",
+    "body": ["new WeakSet<${1:Type}>([${2:objects}])"],
+    "description": "WeakSet"
+  },
+  "WeakMap": {
+    "prefix": "newweakmap",
+    "body": [
+      "new WeakMap<${1:KeyType}, ${2:ValueType}>([[${3:key}, ${4:value}]])"
+    ],
+    "description": "WeakMap"
+  },
+  "querySelector": {
+    "prefix": "qs",
+    "body": ["document.querySelector<${1:HTMLElement}>('${2:selector}')"],
+    "description": "querySelector"
+  },
+  "querySelectorAll": {
+    "prefix": "qsa",
+    "body": ["document.querySelectorAll<${1:HTMLElement}>('${2:selector}')"],
+    "description": "querySelectorAll"
+  },
+  "getElementById": {
+    "prefix": "gel",
+    "body": ["document.getElementById('${1:id}') as ${2:HTMLElement}"],
+    "description": "getElementById"
+  },
+  "createElement": {
+    "prefix": "cel",
+    "body": ["document.createElement('${1:tagName}')"],
+    "description": "createElement"
+  },
+  "addEventListener": {
+    "prefix": "ael",
+    "body": [
+      "${1:element}.addEventListener('${2:event}', (${3:e}: ${4:Event}) => {",
+      "\t$0",
+      "});"
+    ],
+    "description": "addEventListener"
+  },
+  "removeEventListener": {
+    "prefix": "rel",
+    "body": ["${1:element}.removeEventListener('${2:event}', ${3:handler});"],
+    "description": "removeEventListener"
+  },
+  "DOMContentLoaded": {
+    "prefix": "domready",
+    "body": [
+      "document.addEventListener('DOMContentLoaded', () => {",
+      "\t$0",
+      "});"
+    ],
+    "description": "DOMContentLoaded"
+  },
+  "Window Load": {
+    "prefix": "winload",
+    "body": ["window.addEventListener('load', () => {", "\t$0", "});"],
+    "description": "Window Load"
+  },
+  "requestAnimationFrame": {
+    "prefix": "raf",
+    "body": ["requestAnimationFrame(() => {", "\t$0", "});"],
+    "description": "requestAnimationFrame"
+  },
+  "LocalStorage Set": {
+    "prefix": "lsset",
+    "body": ["localStorage.setItem('${1:key}', ${2:value});"],
+    "description": "LocalStorage Set"
+  },
+  "LocalStorage Get": {
+    "prefix": "lsget",
+    "body": ["localStorage.getItem('${1:key}')"],
+    "description": "LocalStorage Get"
+  },
+  "LocalStorage Remove": {
+    "prefix": "lsrem",
+    "body": ["localStorage.removeItem('${1:key}');"],
+    "description": "LocalStorage Remove"
+  },
+  "LocalStorage Clear": {
+    "prefix": "lsclear",
+    "body": ["localStorage.clear();"],
+    "description": "LocalStorage Clear"
+  },
+  "SessionStorage Set": {
+    "prefix": "ssset",
+    "body": ["sessionStorage.setItem('${1:key}', ${2:value});"],
+    "description": "SessionStorage Set"
+  },
+  "SessionStorage Get": {
+    "prefix": "ssget",
+    "body": ["sessionStorage.getItem('${1:key}')"],
+    "description": "SessionStorage Get"
+  },
+  "Generator Function": {
+    "prefix": "gen",
+    "body": [
+      "function* ${1:generatorName}(${2:params}): Generator<${3:YieldType}, ${4:ReturnType}, ${5:NextType}> {",
+      "\tyield $0;",
+      "}"
+    ],
+    "description": "Generator Function"
+  },
+  "Async Generator": {
+    "prefix": "agen",
+    "body": [
+      "async function* ${1:generatorName}(${2:params}): AsyncGenerator<${3:YieldType}, ${4:ReturnType}, ${5:NextType}> {",
+      "\tyield $0;",
+      "}"
+    ],
+    "description": "Async Generator"
+  },
+  "Proxy": {
+    "prefix": "proxy",
+    "body": [
+      "new Proxy<${1:Type}>(${2:target}, {",
+      "\tget(target: ${1:Type}, prop: string | symbol): any {",
+      "\t\t$0",
+      "\t}",
+      "})"
+    ],
+    "description": "Proxy"
+  },
+  "Reflect Get": {
+    "prefix": "rget",
+    "body": ["Reflect.get(${1:target}, '${2:property}')"],
+    "description": "Reflect Get"
+  },
+  "Symbol": {
+    "prefix": "sym",
+    "body": ["Symbol('${1:description}')"],
+    "description": "Symbol"
+  },
+  "Symbol For": {
+    "prefix": "symfor",
+    "body": ["Symbol.for('${1:key}')"],
+    "description": "Symbol For"
+  },
+  "Template Literal": {
+    "prefix": "tpl",
+    "body": ["`${1:text} \\${${2:variable}}`"],
+    "description": "Template Literal"
+  },
+  "Template Literal Type": {
+    "prefix": "tlit",
+    "body": ["type ${1:TypeName} = `${2:prefix}\\${${3:Type}}`;"],
+    "description": "Template Literal Type"
+  },
+  "RegExp": {
+    "prefix": "re",
+    "body": ["/${1:pattern}/${2:flags}"],
+    "description": "RegExp"
+  },
+  "RegExp Test": {
+    "prefix": "retest",
+    "body": ["/${1:pattern}/.test(${2:string})"],
+    "description": "RegExp Test"
+  },
+  "String Match": {
+    "prefix": "match",
+    "body": ["${1:string}.match(/${2:pattern}/${3:flags})"],
+    "description": "String Match"
+  },
+  "String Replace": {
+    "prefix": "replace",
+    "body": [
+      "${1:string}.replace(/${2:pattern}/${3:flags}, '${4:replacement}')"
+    ],
+    "description": "String Replace"
+  },
+  "String Split": {
+    "prefix": "split",
+    "body": ["${1:string}.split('${2:separator}')"],
+    "description": "String Split"
+  },
+  "String Includes": {
+    "prefix": "includes",
+    "body": ["${1:string}.includes('${2:searchString}')"],
+    "description": "String Includes"
+  },
+  "String StartsWith": {
+    "prefix": "startswith",
+    "body": ["${1:string}.startsWith('${2:searchString}')"],
+    "description": "String StartsWith"
+  },
+  "String EndsWith": {
+    "prefix": "endswith",
+    "body": ["${1:string}.endsWith('${2:searchString}')"],
+    "description": "String EndsWith"
+  },
+  "Math Random": {
+    "prefix": "mrand",
+    "body": ["Math.random()"],
+    "description": "Math Random"
+  },
+  "Math Floor": {
+    "prefix": "mfloor",
+    "body": ["Math.floor(${1:number})"],
+    "description": "Math Floor"
+  },
+  "Math Ceil": {
+    "prefix": "mceil",
+    "body": ["Math.ceil(${1:number})"],
+    "description": "Math Ceil"
+  },
+  "Math Round": {
+    "prefix": "mround",
+    "body": ["Math.round(${1:number})"],
+    "description": "Math Round"
+  },
+  "Math Max": {
+    "prefix": "mmax",
+    "body": ["Math.max(${1:numbers})"],
+    "description": "Math Max"
+  },
+  "Math Min": {
+    "prefix": "mmin",
+    "body": ["Math.min(${1:numbers})"],
+    "description": "Math Min"
+  },
+  "Date Now": {
+    "prefix": "dnow",
+    "body": ["Date.now()"],
+    "description": "Date Now"
+  },
+  "New Date": {
+    "prefix": "newdate",
+    "body": ["new Date()"],
+    "description": "New Date"
+  },
+  "Date ISO String": {
+    "prefix": "diso",
+    "body": ["new Date().toISOString()"],
+    "description": "Date ISO String"
+  },
+  "Throw Error": {
+    "prefix": "throw",
+    "body": ["throw new Error('${1:message}');"],
+    "description": "Throw Error"
+  },
+  "Custom Error": {
+    "prefix": "cerr",
+    "body": [
+      "class ${1:CustomError} extends Error {",
+      "\tconstructor(message: string) {",
+      "\t\tsuper(message);",
+      "\t\tthis.name = '${1:CustomError}';",
+      "\t}",
+      "}"
+    ],
+    "description": "Custom Error"
+  },
+  "Typeof check": {
+    "prefix": "typeof",
+    "body": ["typeof ${1:variable} === '${2:type}'"],
+    "description": "Typeof check"
+  },
+  "Instanceof check": {
+    "prefix": "instanceof",
+    "body": ["${1:object} instanceof ${2:Class}"],
+    "description": "Instanceof check"
+  },
+  "Nullish Coalescing": {
+    "prefix": "nullish",
+    "body": ["${1:value} ?? ${2:defaultValue}"],
+    "description": "Nullish Coalescing"
+  },
+  "Optional Chaining": {
+    "prefix": "opt",
+    "body": ["${1:object}?.${2:property}"],
+    "description": "Optional Chaining"
+  },
+  "Non-null Assertion": {
+    "prefix": "nonnulla",
+    "body": ["${1:value}!"],
+    "description": "Non-null Assertion"
+  },
+  "Satisfies Operator": {
+    "prefix": "satisfies",
+    "body": ["${1:expression} satisfies ${2:Type}"],
+    "description": "Satisfies Operator"
+  },
+  "Comment Block": {
+    "prefix": "com",
+    "body": ["/**", " * ${1:description}", " */"],
+    "description": "Comment Block"
+  },
+  "TSDoc Comment": {
+    "prefix": "tsdoc",
+    "body": [
+      "/**",
+      " * ${1:description}",
+      " * @param ${2:param} - ${3:description}",
+      " * @returns ${4:description}",
+      " */"
+    ],
+    "description": "TSDoc Comment"
+  },
+  "TODO Comment": {
+    "prefix": "todo",
+    "body": ["// TODO: ${1:description}"],
+    "description": "TODO Comment"
+  },
+  "FIXME Comment": {
+    "prefix": "fixme",
+    "body": ["// FIXME: ${1:description}"],
+    "description": "FIXME Comment"
+  },
+  "HACK Comment": {
+    "prefix": "hack",
+    "body": ["// HACK: ${1:description}"],
+    "description": "HACK Comment"
+  },
+  "Object Literal": {
+    "prefix": "obj",
+    "body": ["{", "\t${1:key}: ${2:value}$0", "}"],
+    "description": "Object Literal"
+  },
+  "Typed Object": {
+    "prefix": "tobj",
+    "body": [
+      "const ${1:name}: {",
+      "\t${2:key}: ${3:Type};$0",
+      "} = {",
+      "\t${2:key}: ${4:value}",
+      "};"
+    ],
+    "description": "Typed Object"
+  },
+  "Object Method": {
+    "prefix": "objm",
+    "body": [
+      "{",
+      "\t${1:methodName}(${2:params}): ${3:ReturnType} {",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ],
+    "description": "Object Method"
+  },
+  "Array.from": {
+    "prefix": "afrom",
+    "body": ["Array.from<${1:Type}>(${2:arrayLike})"],
+    "description": "Array.from"
+  },
+  "Array.of": {
+    "prefix": "aof",
+    "body": ["Array.of<${1:Type}>(${2:elements})"],
+    "description": "Array.of"
+  }
+}

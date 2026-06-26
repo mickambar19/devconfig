@@ -1,0 +1,161 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+//
+// Context hierarchy (most → least specific):
+//   Editor && vim_mode == normal  — editor focused, vim normal mode
+//   vim_mode == normal && !menu   — vim normal mode, any panel
+//   Workspace                     — anything in Zed (fires even with no buffer open)
+//
+// "Launcher" bindings (file finder, git panel, search, save) live in Workspace
+// so they work from any panel. Editor-specific actions (LSP, hunk ops, blame)
+// stay in "Editor && vim_mode == normal".
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    },
+  },
+  {
+    "bindings": {
+      "cmd-:": "editor::ToggleRelativeLineNumbers",
+    },
+  },
+
+  // ── Workspace-level launchers (work even with NO buffer open) ─────────────
+  // These fire from any panel: git status, project tree, terminal, etc.
+  // Zed context precedence keeps insert-mode space working normally in editors.
+  {
+    "context": "Workspace",
+    "bindings": {
+      // File / search
+      "space s f": "file_finder::Toggle",
+      "space f s": "file_finder::Toggle",
+      "space f w": "workspace::Save",
+      "space s g": "pane::DeploySearch",
+      "space s w": "pane::DeploySearch",
+      "space s k": "command_palette::Toggle",
+      "space s d": "diagnostics::Deploy",
+      "space /": "buffer_search::Deploy",
+      "space space": "tab_switcher::Toggle",
+
+      // Git repo-level (work without an open buffer)
+      "space g s t": "git_panel::ToggleFocus",
+      "space g a": "git::StageFile",
+      "space g d": "git::Diff",
+      "space g b": "git::Branch",
+      "space g c o": "git::Branch",
+      "space g c b": "git::Branch",
+      "space g c m s g": "git::Commit",
+      "space g p": "git::Push",
+      "space g l": "git::Pull",
+
+      // Window / pane management
+      "space w r": "pane::SplitRight",
+      "space w d": "pane::SplitDown",
+      "space w h": "workspace::ActivatePaneLeft",
+      "space w l": "workspace::ActivatePaneRight",
+      "space w j": "workspace::ActivatePaneDown",
+      "space w k": "workspace::ActivatePaneUp",
+      "space w c l": "pane::SplitRight",
+      "space w c j": "pane::SplitDown",
+      "space x": "pane::CloseActiveItem",
+      "space shift-x": "workspace::CloseWindow",
+      "space q": "pane::CloseActiveItem",
+
+      // Buffers / tabs
+      "space b n": "pane::ActivateNextItem",
+      "space b p": "pane::ActivatePreviousItem",
+      "space b d": "pane::CloseActiveItem",
+      "space t c": "workspace::NewFile",
+      "space t x": "pane::CloseActiveItem",
+      "space t n": "pane::ActivateNextItem",
+      "space t p": "pane::ActivatePreviousItem",
+      "space t l": "editor::ToggleLineNumbers",
+    },
+  },
+
+  // ── ctrl-w pane navigation (vim-style, any panel) ─────────────────────────
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "ctrl-w h": "workspace::ActivatePaneLeft",
+      "ctrl-w l": "workspace::ActivatePaneRight",
+      "ctrl-w k": "workspace::ActivatePaneUp",
+      "ctrl-w j": "workspace::ActivatePaneDown",
+      "ctrl-w v": "pane::SplitRight",
+      "ctrl-w s": "pane::SplitDown",
+      "ctrl-w q": "pane::CloseActiveItem",
+    },
+  },
+
+  // ── Visual mode ───────────────────────────────────────────────────────────
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "shift-j": "editor::MoveLineDown",
+      "shift-k": "editor::MoveLineUp",
+      // Gitsigns: stage / restore a visual selection (matches <leader>ggs / <leader>hr)
+      "space g g s": "git::ToggleStaged",
+      "space h r": "git::Restore",
+    },
+  },
+
+  // ── Editor normal mode — LSP, hunk ops, blame (require an open buffer) ────
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      // LSP
+      "g r n": "editor::Rename",
+      "g r a": "editor::ToggleCodeActions",
+      "g r r": "editor::FindAllReferences",
+      "g r i": "editor::GoToImplementation",
+      "g r d": "editor::GoToDefinition",
+      "g r shift-d": "editor::GoToDeclaration",
+      "g r t": "editor::GoToTypeDefinition",
+      "g shift-o": "outline::Toggle",
+      "g shift-w": "project_symbols::Toggle",
+      "space t s": "editor::Hover",
+      "space d d": "editor::Hover",
+      "space d l": "diagnostics::Deploy",
+      "space d q": "diagnostics::Deploy",
+
+      // Gitsigns: hunk navigation (]c / [c)
+      "] c": "editor::GoToHunk",
+      "[ c": "editor::GoToPreviousHunk",
+
+      // Gitsigns: hunk actions (space g g ...)
+      "space g g s": "git::ToggleStaged",               // [s]tage hunk
+      "space g g u": "git::ToggleStaged",               // [u]ndo stage hunk (toggle)
+      "space g g r": "git::Restore",                    // [r]estore / reset hunk
+      "space g g shift-s": "git::StageFile",            // [S]tage buffer
+      "space g g shift-u": "git::UnstageFile",          // [U]nstage buffer
+      "space g g shift-r": "git::RestoreFile",          // [R]eset buffer
+      "space g g p": "editor::ToggleSelectedDiffHunks", // [p]review hunk inline
+      "space g g b": "editor::ToggleGitBlameInline",    // [b]lame line
+      "space g g d": "git::Diff",                       // [d]iff against index
+      "space g g shift-d": "git::Diff",                 // [D]iff against last commit
+
+      // Toggles
+      "space t b": "editor::ToggleGitBlameInline",           // toggle line blame
+      "space t shift-d": "editor::ToggleSelectedDiffHunks",  // toggle deleted / inline diff
+
+      // Git: per-file actions that need an open buffer
+      "space g w": "workspace::Save",                   // [w]rite (Gwrite)
+      "space g b l": "git::Blame",                      // [bl]ame (full panel)
+      "space g b r": "editor::OpenPermalinkToLine",     // [br]owse (GBrowse)
+      "space g c p": "editor::CopyPermalinkToLine",     // [c]o[p]y github url
+    },
+  },
+]

@@ -1,0 +1,96 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "diff_view_style": "split",
+  "project_panel": {
+    "hide_hidden": false,
+    "bold_folder_labels": false,
+  },
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/.jj",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+  ],
+  "context_servers": {
+    "Augment-Context-Engine": {
+      "enabled": true,
+      "remote": false,
+      "command": "auggie",
+      "args": ["--mcp", "--mcp-auto-workspace"],
+      "env": {},
+    },
+  },
+  "edit_predictions": {
+    "provider": "copilot",
+  },
+  "cli_default_open_behavior": "new_window",
+  "which_key": {
+    "enabled": true,
+  },
+  "ui_font_family": "Menlo",
+  "buffer_font_family": "Menlo",
+  "auto_update": false,
+  "redact_private_values": true,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+    },
+    "auggie": {
+      "type": "registry",
+    },
+    "github-copilot-cli": {
+      "type": "registry",
+    },
+  },
+  "icon_theme": "Material Icon Theme",
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": "Tokyo Night",
+  "languages": {
+    "Make": {
+      "hard_tabs": true,
+      "tab_size": 4,
+    },
+    "TypeScript": {
+      "formatter": [
+        { "language_server": { "name": "biome" } },
+        { "language_server": { "name": "prettier" } },
+      ],
+      "format_on_save": "on",
+    },
+    "TSX": {
+      "formatter": [
+        { "language_server": { "name": "biome" } },
+        { "language_server": { "name": "prettier" } },
+      ],
+      "format_on_save": "on",
+    },
+  },
+  "lsp": {
+    "biome": {
+      "settings": {
+        "require_config_file": true,
+      },
+    },
+  },
+  "auto_install_extensions": {
+    "styled-components": false,
+  },
+}
