@@ -156,7 +156,7 @@ on-mode-changed = []
     alt-r = 'workspace r'
     # alt-s = 'workspace s'
     # alt-t = 'workspace t'
-    # alt-u = 'workspace u'
+    alt-u = 'workspace u'
     # alt-v = 'workspace v'
     alt-w = 'workspace w'
     # alt-x = 'workspace x'
@@ -189,7 +189,7 @@ on-mode-changed = []
     alt-shift-r = 'move-node-to-workspace r'
     # alt-shift-s = 'move-node-to-workspace s'
     # alt-shift-t = 'move-node-to-workspace t'
-    # alt-shift-u = 'move-node-to-workspace u'
+    alt-shift-u = 'move-node-to-workspace u'
     # alt-shift-v = 'move-node-to-workspace v'
     alt-shift-w = 'move-node-to-workspace w'
     # alt-shift-x = 'move-node-to-workspace x'
@@ -235,7 +235,7 @@ if.app-id = 'com.mitchellh.ghostty'
 run = "move-node-to-workspace 1"
 
 [[on-window-detected]] 
-if.app-id = 'com.google.chrome'
+if.app-id = 'com.google.Chrome'
 run = "move-node-to-workspace 2"
 
 [[on-window-detected]] 
@@ -253,3 +253,6 @@ run = "move-node-to-workspace 8"
 [[on-window-detected]] 
 if.app-id = 'com.spotify.client'
 run = "move-node-to-workspace 9"
+
+[[on-window-detected]] 
+run = "move-node-to-workspace u"
